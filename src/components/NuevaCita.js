@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import uuid from 'uuid'
+import { stat } from 'fs';
+
+
+const stateInicial = {
+    cita:{
+        nombre:'',
+        apellido:'',
+        fecha:'',
+        hora:'',
+        sintomas:''
+    },
+    error:false
+}
 
 class NuevaCita extends Component {
-    state={
-        cita:{
-            nombre:'',
-            apellido:'',
-            fecha:'',
-            hora:'',
-            sintomas:''
-        },
-        error:false
-    }
+    state = {...stateInicial}
+    
 
     handleChange = e =>{
          this.setState({
@@ -36,6 +41,10 @@ class NuevaCita extends Component {
         nuevaCita.id= uuid();
 
         this.props.crearNuevaCita(nuevaCita)
+
+        this.setState({
+            ...stateInicial
+        })
     }
 
     render() {
@@ -90,7 +99,10 @@ class NuevaCita extends Component {
                                     value={this.state.cita.fecha}
                                 />
                             </div>
-                            <label className="col-sm-4 col-lg-2 col-form-label">Hora</label>
+                        </div>
+                        
+                        <div className="form-group row">
+                        <label className="col-sm-4 col-lg-2 col-form-label">Hora</label>
                             <div className="col-sm-8 col-lg-4">
                                 <input 
                                     type="time"
@@ -99,8 +111,8 @@ class NuevaCita extends Component {
                                     onChange={this.handleChange}
                                     value={this.state.cita.hora}
                                 />
-                            </div>
-                        </div>
+                         </div>
+                         </div>
 
                         <div className="form-group row">
                             <label className="col-sm-4 col-lg-2 col-form-label">Sintomas</label>
