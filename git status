@@ -1,0 +1,29 @@
+[33mcommit 1235a433362ba7e652527fefb5c1723c9d4d97f0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Javier Calin <javier.calindb@gmail.com>
+Date:   Thu Jul 4 12:30:57 2019 +0200
+
+    Agregado proptypes
+
+[33mcommit cdd982ac71a8924164c2a94e767e0ce240ede532[m
+Author: Javier Calin <javier.calindb@gmail.com>
+Date:   Fri Jun 28 14:02:19 2019 +0200
+
+    Añadida lista de citas y boton de borrar cita
+
+[33mcommit 9666db36c5e5a0acbfd6f95a3cb5ca992693b56b[m
+Author: Javier Calin <javier.calindb@gmail.com>
+Date:   Fri Jun 28 11:50:07 2019 +0200
+
+    Agregada la lectura de datos del form, validacion y actualizacipn del state en App
+
+[33mcommit 933fd7f4b4d48ba67700adde3d590c41aeeeee17[m
+Author: Javier Calin <javier.calindb@gmail.com>
+Date:   Thu Jun 27 17:56:43 2019 +0200
+
+    empezamos el proyecto agregando el componente Header, un simple componente stateless  para el titulo, y el componente JNuevaCita, para el formulario de agregar pacientes. Usamos un bootstrap para el stylo.
+
+[33mcommit 9a990d60ba916d11959ce2bdf98c4b48e4217ef4[m
+Author: Javier Calin <javier.calindb@gmail.com>
+Date:   Thu Jun 27 17:09:17 2019 +0200
+
+    Initial commit from Create React App
